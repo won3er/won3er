@@ -24,8 +24,6 @@
   <img align="center" alt="won3er-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
   <img align="center" alt="won3er-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
   <img align="center" alt="won3er-Csharp" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
-  <img align="right" alt="won3er-icone" height="240" src="https://cdn.discordapp.com/attachments/1087058159216115794/1115808912487219270/download20230602220238.png">
-</div>
 
 ##
 
