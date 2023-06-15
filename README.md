@@ -12,8 +12,7 @@
 <div>
 <a href="https://github.com/won3er">
   
-  **![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=won3er&show_icons=true&theme=merko)**
-</div> 
+
   
 
 <div style="display: inline_block"><br>
