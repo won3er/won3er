@@ -7,7 +7,6 @@
 - 🤖 IA.
 - 🕹️ Gosto de coisas retrô. 
 - 💻 Estudante de ADS.
-- 📚 Um polímata fleumático. 
 
 <div>
 <a href="https://github.com/won3er">
