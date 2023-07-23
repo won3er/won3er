@@ -1,4 +1,4 @@
-## Olá, me chamo Jadson | won3er🤠, sou criador de projetos diversos. 
+## Olá, me chamo Jadson |, sou criador de projetos diversos. 
 
 
 - Interesse por:
