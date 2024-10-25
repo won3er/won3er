@@ -4,9 +4,10 @@
 - Interesse por:
 - 🌌 Astrofísica;
 - 🧠 Psicologia;
+- Scripts;
+- SecurityNet;
 - 🤖 IA.
-- 🕹️ Gosto de coisas retrô. 
-- 💻 Estudante de ADS.
+
 
 <div>
 <a href="https://github.com/won3er">
