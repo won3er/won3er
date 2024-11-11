@@ -6,7 +6,7 @@
 - 🧠 Psicologia;
 - 🤖 IA.
 - 🕹️ Gosto de coisas retrô. 
-- 💻 Estudante de ADS.
+- 💻 Tecnólogo em ADS.
 
 <div>
 <a href="https://github.com/won3er">
