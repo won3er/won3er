@@ -6,7 +6,6 @@
 - 🧠 Psicologia;
 - 🤖 IA.
 - 🕹️ Retrô. 
-- 💻 Tecnólogo em ADS.
 
 <div>
 <a href="https://github.com/won3er">
