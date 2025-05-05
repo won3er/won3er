@@ -1,6 +1,6 @@
-## <span style="color:#39FF14;">Olá, me chamo Jadson</span> | <span style="color:#39FF14;">Sou criador de projetos diversos.</span>
+## <span style="color:#2ebd59;">Olá, me chamo Jadson</span> | <span style="color:#2ebd59;">Sou criador de projetos diversos.</span>
 
-### <span style="color:#39FF14;">Interesses:</span>
+### <span style="color:#2ebd59;">Interesses:</span>
 - 🌌 Astrofísica  
 - 🧠 Psicologia  
 - 🤖 Inteligência Artificial  
@@ -19,19 +19,19 @@
 
 ---
 
-### <span style="color:#39FF14;">Ajude nos projetos:</span>
+### <span style="color:#2ebd59;">Ajude nos projetos:</span>
 
 <a href="https://pixgg.com/Won3er" target="_blank">
-  <img src="https://img.shields.io/badge/Pix-Apoiar-%2339FF14?style=for-the-badge&logo=pix&logoColor=black" />
+  <img src="https://img.shields.io/badge/Pix-Apoiar-%232ebd59?style=for-the-badge&logo=pix&logoColor=black" />
 </a>
 
-<a href="mailto:ojadsonpaiva@gmail.com" target="_blank">
-  <img src="https://img.shields.io/badge/PayPal-ojadsonpaiva@gmail.com-%2339FF14?style=for-the-badge&logo=paypal&logoColor=black" />
+<a href="https://www.paypal.com/paypalme/ojadsonpaiva" target="_blank">
+  <img src="https://img.shields.io/badge/PayPal-Doar-%232ebd59?style=for-the-badge&logo=paypal&logoColor=black" />
 </a>
 
 ---
 
-### <span style="color:#39FF14;">Conecte-se comigo:</span>
+### <span style="color:#2ebd59;">Conecte-se comigo:</span>
 
 <a href="https://www.linkedin.com/in/ojadsonpaiva/" target="_blank">
   <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
