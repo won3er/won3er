@@ -21,9 +21,6 @@
 
 ### <span style="color:#2ebd59;">Ajude nos projetos:</span>
 
-<a href="https://pixgg.com/Won3er" target="_blank">
-  <img src="https://img.shields.io/badge/Pix-Apoiar-%232ebd59?style=for-the-badge&logo=pix&logoColor=black" />
-</a>
 
 <a href="https://www.paypal.com/paypalme/ojadsonpaiva" target="_blank">
   <img src="https://img.shields.io/badge/PayPal-Doar-%232ebd59?style=for-the-badge&logo=paypal&logoColor=black" />
