@@ -19,7 +19,7 @@
 
 ---
 
-### <span style="color:#2ebd59;">Ajude nos projetos:</span>
+### <span style="color:#2ebd59;">Apoie os projetos:</span>
 
 
 <a href="https://www.paypal.com/paypalme/ojadsonpaiva" target="_blank">
