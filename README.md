@@ -1,10 +1,10 @@
-## <span style="color:#2ebd59;">Olá, me chamo Jadson</span> | <span style="color:#2ebd59;">Sou criador de projetos diversos.</span>
+## <span style="color:#2ebd59;">Olá, bem-vindo. </span> | <span style="color:#2ebd59;">Sou criador de projetos diversos.</span>
 
 ### <span style="color:#2ebd59;">Interesses:</span>
-- 🌌 Astrofísica  
-- 🧠 Psicologia  
-- 🤖 Inteligência Artificial  
-- 🕹️ Cultura Retrô  
+- 🌌 Ciência;
+- 🧠 Educação;  
+- 🤖 A.I;
+- 🕹️ Retrô;
 
 ---
 
@@ -21,18 +21,9 @@
 
 ### <span style="color:#2ebd59;">Apoie os projetos:</span>
 
-
-<a href="https://www.paypal.com/paypalme/ojadsonpaiva" target="_blank">
-  <img src="https://img.shields.io/badge/PayPal-Doar-%232ebd59?style=for-the-badge&logo=paypal&logoColor=black" />
-</a>
-
 ---
 
 ### <span style="color:#2ebd59;">Conecte-se comigo:</span>
-
-<a href="https://www.linkedin.com/in/ojadsonpaiva/" target="_blank">
-  <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
 
 <a href="mailto:ojadsonpaiva@gmail.com">
   <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" />
