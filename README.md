@@ -19,10 +19,6 @@
 
 ---
 
-### <span style="color:#2ebd59;">Apoie os projetos:</span>
-
----
-
 ### <span style="color:#2ebd59;">Conecte-se comigo:</span>
 
 <a href="mailto:ojadsonpaiva@gmail.com">
