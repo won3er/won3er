@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A compact interactive terminal by Paiva — Tech Lead, Software Engineer, and AI & Automation Builder."
+    />
+    <title>Paiva — Retro Ops Console</title>
+    <style>
+      :root {
+        --canvas: #0d1117;
+        --surface: #161b22;
+        --border: #30363d;
+        --text: #e6edf3;
+        --muted: #8b949e;
+        --signal: #58a6ff;
+        --ok: #3fb950;
+        --amber: #d29922;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        color: var(--text);
+        background: var(--canvas);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      }
+
+      a { color: var(--signal); }
+
+      .shell {
+        width: min(1040px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0;
+      }
+
+      .topline {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 20px;
+        color: var(--muted);
+        font-size: 12px;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+      }
+
+      .brand { color: var(--text); font-weight: 700; }
+      .status { color: var(--ok); }
+
+      .window {
+        overflow: hidden;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        background: var(--surface);
+        box-shadow: 0 24px 60px -35px #000;
+      }
+
+      .titlebar {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        height: 42px;
+        padding: 0 16px;
+        border-bottom: 1px solid var(--border);
+        background: #0d1117;
+      }
+
+      .dot { width: 10px; height: 10px; border-radius: 50%; background: #30363d; }
+      .dot:nth-child(1) { background: #f85149; }
+      .dot:nth-child(2) { background: #d29922; }
+      .dot:nth-child(3) { background: #3fb950; }
+      .titlebar span:last-child { margin-left: auto; color: var(--muted); font-size: 12px; }
+
+      .layout {
+        display: grid;
+        grid-template-columns: 230px minmax(0, 1fr);
+        min-height: 520px;
+      }
+
+      .sidebar {
+        padding: 20px;
+        border-right: 1px solid var(--border);
+        background: #0d1117;
+      }
+
+      .sidebar h1 { margin: 0 0 8px; font-size: 15px; }
+      .sidebar p { margin: 0 0 22px; color: var(--muted); font-size: 12px; line-height: 1.65; }
+      .command-list { display: grid; gap: 7px; }
+
+      button {
+        width: 100%;
+        padding: 9px 10px;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        color: var(--muted);
+        background: transparent;
+        text-align: left;
+        font: inherit;
+        font-size: 13px;
+        cursor: pointer;
+      }
+
+      button:hover, button:focus-visible {
+        outline: none;
+        border-color: var(--border);
+        color: var(--text);
+        background: #21262d;
+      }
+
+      .terminal { display: flex; flex-direction: column; min-width: 0; }
+      .output { flex: 1; padding: 28px; font-size: 14px; line-height: 1.75; white-space: pre-wrap; }
+      .prompt { color: var(--ok); }
+      .hint { color: var(--muted); }
+      .accent { color: var(--signal); }
+      .amber { color: var(--amber); }
+
+      .input-line {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 16px 20px;
+        border-top: 1px solid var(--border);
+        background: #0d1117;
+      }
+
+      input {
+        min-width: 0;
+        flex: 1;
+        border: 0;
+        outline: 0;
+        color: var(--text);
+        background: transparent;
+        font: inherit;
+        font-size: 14px;
+      }
+
+      .footnote { margin: 20px 0 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
+
+      @media (max-width: 700px) {
+        .shell { width: min(100% - 24px, 1040px); padding: 20px 0; }
+        .topline { align-items: flex-start; flex-direction: column; }
+        .layout { grid-template-columns: 1fr; }
+        .sidebar { border-right: 0; border-bottom: 1px solid var(--border); }
+        .command-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        .output { min-height: 320px; padding: 20px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <div class="topline">
+        <span class="brand">PAIVA / RETRO OPS CONSOLE</span>
+        <span class="status">● SYSTEM ONLINE <span id="clock"></span></span>
+      </div>
+
+      <section class="window" aria-label="Interactive retro terminal">
+        <div class="titlebar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span>console://profile</span></div>
+        <div class="layout">
+          <aside class="sidebar">
+            <h1>COMMAND INDEX</h1>
+            <p>Choose a command or type one below. Start with <span class="accent">help</span>.</p>
+            <div class="command-list">
+              <button data-command="about">01 / about</button>
+              <button data-command="focus">02 / focus</button>
+              <button data-command="now">03 / now</button>
+              <button data-command="muriops">04 / muriops</button>
+              <button data-command="clear">05 / clear</button>
+              <button data-command="help">? / help</button>
+            </div>
+          </aside>
+          <section class="terminal">
+            <output class="output" id="output" aria-live="polite"></output>
+            <form class="input-line" id="command-form">
+              <span class="prompt">paiva@ops:~$</span>
+              <input id="command" autocomplete="off" autofocus aria-label="Terminal command" placeholder="type a command" />
+            </form>
+          </section>
+        </div>
+      </section>
+      <p class="footnote">A compact, browser-only interface. No tracking, no data collection. Built as a small experiment in clear technical communication.</p>
+    </main>
+
+    <script>
+      const output = document.getElementById("output");
+      const input = document.getElementById("command");
+      const form = document.getElementById("command-form");
+      const clock = document.getElementById("clock");
+
+      const commands = {
+        help: () => `<span class="accent">AVAILABLE COMMANDS</span>
+about      Technical profile and background
+focus      What I build and optimize
+now        Current direction
+muriops    Open the MuriOps system
+clear      Reset this terminal`,
+        about: () => `<span class="accent">PROFILE / PAIVA</span>
+Tech Lead, Software Engineer, and AI & Automation Builder.
+
+Background: Systems Analysis and Development, plus postgraduate specialization in Artificial Intelligence and Data Science.
+
+I work where engineering quality, automation, and practical AI meet.`,
+        focus: () => `<span class="accent">FOCUS AREAS</span>
+<span class="amber">→</span> Software architecture and technical direction
+<span class="amber">→</span> AI-assisted development and prompt engineering
+<span class="amber">→</span> Automation and developer workflows
+<span class="amber">→</span> Quality engineering and product delivery`,
+        now: () => `<span class="accent">CURRENT SIGNAL</span>
+Building systems that connect analysis, planning, remediation, and engineering execution.
+
+Principle: automate the repetitive work; keep meaningful decisions explicit.`,
+        muriops: () => `<span class="accent">MURIOPS</span>
+Continuous digital quality management, from diagnosis to application.
+
+<a href="https://muriops.com.br/" target="_blank" rel="noreferrer">Open muriops.com.br ↗</a>`,
+      };
+
+      function print(value, command) {
+        const prefix = command ? `<span class="prompt">paiva@ops:~$</span> ${command}\n\n` : "";
+        output.innerHTML = prefix + value + `\n\n<span class="hint">Type <span class="accent">help</span> to continue.</span>`;
+      }
+
+      function run(raw) {
+        const command = raw.trim().toLowerCase();
+        if (!command) return;
+        if (command === "clear") { output.innerHTML = ""; return; }
+        if (commands[command]) { print(commands[command](), command); return; }
+        print(`<span class="amber">Unknown command:</span> ${command}\nTry <span class="accent">help</span>.`, command);
+      }
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        run(input.value);
+        input.value = "";
+      });
+
+      document.querySelectorAll("[data-command]").forEach((button) => {
+        button.addEventListener("click", () => {
+          run(button.dataset.command);
+          input.focus();
+        });
+      });
+
+      function updateClock() {
+        clock.textContent = new Intl.DateTimeFormat("en-GB", { hour: "2-digit", minute: "2-digit", second: "2-digit" }).format(new Date());
+      }
+      updateClock();
+      setInterval(updateClock, 1000);
+      print(`<span class="accent">WELCOME</span>
+This is a small interactive profile console.
+
+Choose a command from the index or type <span class="accent">help</span>.`);
+    </script>
+  </body>
+</html>

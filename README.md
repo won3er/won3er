@@ -44,6 +44,9 @@ Software architecture · AI & prompt engineering · Automation · Quality engine
 
 **[Visit MuriOps →](https://muriops.com.br/)**  \nA technical workspace for continuous digital quality management.
 
+**[Launch the Retro Ops Console →](https://won3er.github.io/won3er/)**<br />
+A small interactive terminal with the context behind my work.
+
 ---
 
 <p align="center">
