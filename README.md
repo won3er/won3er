@@ -22,33 +22,4 @@ I enjoy using modern tools pragmatically: from structured engineering foundation
 
 Software architecture · AI & prompt engineering · Automation · Quality engineering · Developer workflows · Product delivery
 
-## Current work
 
-- **[MuriOps](https://muriops.com.br/)** — a technical workspace for continuous digital quality management.
-- Building practical systems that connect analysis, planning, remediation, and engineering execution.
-- Exploring AI as a disciplined engineering collaborator — not a substitute for judgment.
-
-<details>
-<summary><strong>How I like to work</strong></summary>
-
-<br />
-
-1. Understand the real problem before choosing the tool.
-2. Make the system observable, testable, and easy to evolve.
-3. Automate repetitive work while keeping meaningful decisions explicit.
-4. Ship in small, verifiable increments.
-
-</details>
-
-## Product
-
-**[Visit MuriOps →](https://muriops.com.br/)**  \nA technical workspace for continuous digital quality management.
-
-**[Launch the Retro Ops Console →](https://won3er.github.io/won3er/)**<br />
-A small interactive terminal with the context behind my work.
-
----
-
-<p align="center">
-  <i>Good software is built with context, clear decisions, and continuous improvement.</i>
-</p>
